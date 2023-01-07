@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+       a:visited{
+        color: rgb(206, 28, 206);
+       }
+       a:active{
+        color: cornflowerblue;
+       }
+       a:hover{
+        color: indigo;
+       }
+       a::after{
+        content: ' [link] ';
+       }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://cursoemvideo.com/cursos/" target="blank">Site do Curso Em Video</a></li>
+        <li><a href="https://www.ev.org.br" target="_blank">Fundação Bradesco</a></li>
+        <li><a href="https://ge.globo.com" target="_blank">Globo Esporte</a></li>
+    </ul>
+</body>
+</html>
